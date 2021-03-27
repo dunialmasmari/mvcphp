@@ -5,7 +5,8 @@ class user{
         $this->$db=new DB();
     }
     function getQuery(){
-        $this->db->select();
+        $query=>$this->db->columns()->from()->where()->build();
+        $newdata=$query->execute()
       //  return array('id'=>1,'name'=>'Hamas','address'=>'mareb');
 
     }
